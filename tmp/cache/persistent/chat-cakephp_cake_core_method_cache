@@ -1,2 +1,2 @@
-1387363647
-a:2:{s:4:"name";a:6:{s:32:"944265ba216cfab05d79818cf165602e";s:14:"`chat_cakephp`";s:32:"9e15f4c4f5092dbf1e47bdcc9105a478";s:7:"`rooms`";s:32:"4f78047da2b3ef964abbc891e6ef2ceb";s:16:"`Room`.`room_id`";s:32:"e16c6745c8b9bfd647d8d04090c12375";s:13:"`Room`.`name`";s:32:"e228bf1cc146fa2781eb2ec93df661cf";s:6:"`Room`";s:32:"fc4c528ae40d23f09280dab99194a955";s:6:"`name`";}s:6:"fields";a:1:{s:32:"963bed8255c19598c8c6a36b3593e343";a:2:{i:0;s:16:"`Room`.`room_id`";i:1;s:13:"`Room`.`name`";}}}
+1387365513
+a:1:{s:4:"name";a:3:{s:32:"944265ba216cfab05d79818cf165602e";s:14:"`chat_cakephp`";s:32:"9e15f4c4f5092dbf1e47bdcc9105a478";s:7:"`rooms`";s:32:"fc4c528ae40d23f09280dab99194a955";s:6:"`name`";}}

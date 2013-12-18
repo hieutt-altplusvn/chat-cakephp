@@ -13,13 +13,13 @@ class RoomController extends AppController {
 
 	public function create() {
 
-		 if ($this->request->is('post')) {
+		$this->autoRender = false;
+		if ($this->request->is('post')) {
             if ($this->Room->save($this->data)) {
                 $this->Session->setFlash('Add new room succssfully!');
-                header("Content-type: application/json");
                 $data = array('status' => 'success');
+                header("Content-Type: application/json");
        			echo json_encode($data);
-       			exit;
             } else {
                 $this->Session->setFlash('Add new room failed!!!', 'flash/error');
             }

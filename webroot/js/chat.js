@@ -7,9 +7,7 @@ $(document).ready(function() {
 			data: 'name='+name,
 			dataType: 'json',
 			success: function(data) {
-				alert(1);
 				if (data.status == "success") {
-					alert(2);
 					window.location.href = "/room";
 				}
 

@@ -20,7 +20,7 @@ class AppController extends Controller {
 		$this->set('auth', $this->Auth);
 	}
 
-	public function isAuthorized($user) {    
+	public function isAuthorized($user) {
     	return true;
 	}
-}
+}	

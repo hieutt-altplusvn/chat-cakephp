@@ -24,7 +24,7 @@
 $act = $this->params['action'];
 ?>
 <div class="navbar navbar-default navbar-static-top">
-    <a class="navbar-brand" href="#">Chat System</a>
+    <a class="navbar-brand" href="/chat-cakephp">Chat System</a>
     <?php
     if (!isset($users)) { ?>
     <ul class="nav navbar-nav navbar-right">

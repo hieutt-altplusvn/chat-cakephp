@@ -11,11 +11,22 @@ class RoomController extends AppController {
 		parent::beforeFilter();
 	}
 
+	/*
+	* @router('/create-room')
+	*/
 	public function create() {
 
 		$this->autoRender = false;
 		if ($this->request->is('post')) {
-            if ($this->Room->save($this->data)) {
+			$data = $this->data;
+			$users = $this->Session->read('Auth.User');
+			$data['Room']['user_id'] = $users['user_id'];
+			$data['Room']['created_by'] = $users['username'];
+			$data['Room']['name'] = $this->data['name'];
+			$time = time();
+			$data['Room']['time'] = $time;
+			$data['Room']['update_time'] = $time;
+            if ($this->Room->save($data)) {
                 $this->Session->setFlash('Add new room succssfully!');
                 $data = array('status' => 'success');
                 header("Content-Type: application/json");
@@ -25,5 +36,4 @@ class RoomController extends AppController {
             }
         }
     }
-	
 }
